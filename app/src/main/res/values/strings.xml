@@ -1,6 +1,21 @@
 <resources>
-  <string name="app_name">Authenticator</string>
+    <string name="app_name">Authenticator</string>
 
-  <!-- Splash Activity -->
-  <string name="splash_f">f</string>
+    <!-- Splash Activity -->
+    <string name="splash_f">f</string>
+
+    <!-- Login Activity -->
+    <string name="facebook">facebook</string>
+    <string name="emailLabel">Email:</string>
+    <string name="emailHint">Enter Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+
+    <!-- Main Activity -->
+    <string name="name">Justin Paul Ong</string>
+    <string name="greetings">Hi I'm </string>
+    <string name="email">ong.jp08@gmail.com</string>
+    <string name="logout">Logout</string>
+    <string name="logout_message">Thank you for checking!</string>
+    <string name="signoff">Signing off</string>
 </resources>

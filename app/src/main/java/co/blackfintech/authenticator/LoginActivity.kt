@@ -11,9 +11,11 @@ import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.yesButton
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity()
+{
 
-  override fun onCreate(savedInstanceState: Bundle?) {
+  override fun onCreate(savedInstanceState: Bundle?)
+  {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_login)
 
@@ -27,7 +29,8 @@ class LoginActivity : AppCompatActivity() {
     }
   }
 
-  private fun validate(email: String, password: String) {
+  private fun validate(email: String, password: String)
+  {
 
     if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
 
@@ -45,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
       }.show()
     }
 
-    if (email.equals("johndoe@mail.com") && password.equals("mojako123")) {
+    if (email.equals("ong.jp08@gmail.com") && password.equals("12345")) {
 
       startActivity<MainActivity>()
       val store = SessionStore()

@@ -14,7 +14,8 @@ class SessionStore {
 
   val KEY_USER_EMAIL = "email"
 
-  fun saveEmail(email: String, context: Context) {
+  fun saveEmail(email: String, context: Context)
+  {
 
     val editor = context
         .getSharedPreferences(KEY_USER_EMAIL,
@@ -24,12 +25,14 @@ class SessionStore {
     editor.apply()
   }
 
-  fun restoreEmail(context: Context) : String {
+  fun restoreEmail(context: Context) : String
+  {
 
     val prefs = context.getSharedPreferences(KEY_USER_EMAIL,
                                              Context.MODE_PRIVATE)
     return prefs.getString(KEY_USER_EMAIL, "")
   }
+
 
   fun clearEmail(context: Context) {
 
